@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Image</title>
+</head>
+<style>
+#parent{
+height: 40vh;
+width: 25%;
+margin-bottom: 20px;
+}
+#parent img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+</style>
+<body>
+
+
+
+    <div id="parent">
+  <img id="photo" src="img/one.jpg" width="300">
+</div>
+  
+
+  <button id="btn">Click Me</button>
+
+  <script>
+
+
+let images =["img/two.jpg","img/three.jpg","img/four.jpg","img/five.jpg","img/six.jpg","img/seven.jpg",];
+ let button = document.getElementById("btn")
+ button.addEventListener("click",()=>{
+ let index = Math.floor(Math.random()*images.length);
+ photo.src = images[index];
+ });
+  </script>
+
+</body>
+</html>
+ 
